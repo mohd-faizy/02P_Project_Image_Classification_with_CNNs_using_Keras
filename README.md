@@ -13,6 +13,15 @@ The Project Focus on two learning objectives:
 1. Understand how to create convolutional neural networks in Keras.
 2. Be able to train convolutional neural networks to solve image classification problems.
 
+## __CIFAR-10 DATASET__
+
+> The __CIFAR-10__ dataset (__Canadian Institute For Advanced Research__) is a collection of images that are commonly used to train __machine learning__ and __computer vision algorithms__. It is one of the most widely used datasets for machine learning research.The __CIFAR-10__ dataset contains __60,000 32x32 color images__ in __10 different classes__. The 10 different classes represent __airplanes, cars, birds, cats, deer, dogs, frogs, horses, ships,__ and __trucks__. There are __6,000 images__ of each class.
+
+> Computer algorithms for recognizing objects in photos often learn by example. CIFAR-10 is a set of images that can be used to teach a computer how to recognize objects. Since the images in CIFAR-10 are __low-resolution (32x32)__, this dataset can allow researchers to quickly try different algorithms to see what works. Various kinds of convolutional neural networks tend to be the best at recognizing the images in __CIFAR-10__.
+
+> CIFAR-10 is a labeled subset of the 80 million tiny images dataset. When the dataset was created, students were paid to label all of the images.
+<center><img src='https://blog.kickview.com/content/images/size/w2000/2016/12/cfar-1.jpg'></center>
+
 ## __Project Structure__
 The hands on project on Image Classification with CNNs using Keras is divided into following tasks:
 
