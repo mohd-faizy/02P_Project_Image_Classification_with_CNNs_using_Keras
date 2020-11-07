@@ -1,10 +1,11 @@
 # __Project - Image Classification with CNNs using Keras__
 Training  a CNN in Keras with a TensorFlow backend to solve Image Classification problems
 
+<img src='https://miro.medium.com/max/700/1*1wDoZyhXhGvkfqpO0k0y6g.png'>
 
-## __Datset__
+## __Dataset__
 
-> [__CIFAR-10__ -> python version](https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
+> [__CIFAR-10__ - python version](https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
 
 __md5sum:__ c58f30108f718f92721af3b95e74349a
 
