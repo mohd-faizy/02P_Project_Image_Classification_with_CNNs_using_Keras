@@ -1,19 +1,21 @@
-<center><img src= 'https://miro.medium.com/max/3840/1*oB3S5yHHhvougJkPXuc8og.gif' <center></center>
-
-# 2_Project_Image_Classification_with_CNNs_using_Keras
+# __Project - Image Classification with CNNs using Keras__
 Training  a CNN in Keras with a TensorFlow backend to solve Image Classification problems
 
 
-## __Project Overview__
-Image Classification with CNNs using Keras
+## __Datset__
 
-## __Objectives__
-The Project Focus on two learning objectives:
+> [__CIFAR-10__ -> python version](https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
 
-1. Understand how to create convolutional neural networks in Keras.
-2. Be able to train convolutional neural networks to solve image classification problems.
+__md5sum:__ c58f30108f718f92721af3b95e74349a
 
-## __CIFAR-10 DATASET__
+__Version	Size:__ 163 MB	
+
+
+```python
+# Loading the from keras dataset 
+(x_train, y_train), (x_test, y_test) = tf.keras.datasets.cifar10.load_data()
+
+```
 
 > The __CIFAR-10__ dataset (__Canadian Institute For Advanced Research__) is a collection of images that are commonly used to train __machine learning__ and __computer vision algorithms__. It is one of the most widely used datasets for machine learning research.The __CIFAR-10__ dataset contains __60,000 32x32 color images__ in __10 different classes__. The 10 different classes represent __airplanes, cars, birds, cats, deer, dogs, frogs, horses, ships,__ and __trucks__. There are __6,000 images__ of each class.
 
@@ -21,6 +23,15 @@ The Project Focus on two learning objectives:
 
 > CIFAR-10 is a labeled subset of the 80 million tiny images dataset. When the dataset was created, students were paid to label all of the images.
 <center><img src='https://blog.kickview.com/content/images/size/w2000/2016/12/cfar-1.jpg'></center>
+
+## __Project Overview__
+Image Classification with CNNs using Keras
+
+## __Objectives__
+The Project Focus on two learning objectives:
+
+1. _Understand how to create convolutional neural networks in Keras._
+2. _Be able to train convolutional neural networks to solve image classification problems._
 
 ## __Project Structure__
 The hands on project on Image Classification with CNNs using Keras is divided into following tasks:
@@ -53,3 +64,35 @@ The hands on project on Image Classification with CNNs using Keras is divided in
 - Plotting the training and validation accuracy from the training.
 - Loading the best model.
 - Getting predictions on the test set and displaying the results.
+
+### Classify Traffic Sign Using Deep Learning for Self-Driving Cars is divided into following tasks
+
+- Task 1: overview
+- Task 2: Import Libraries and data-sets
+- Task 3: Perform image visualization
+- Task 4: Convert images to gray-scale and perform normalization
+- Task 5: Understand the theory and intuition behind Convolutional Neural Networks
+- Task 6: Build deep learning model
+- Task 7: Compile and train deep learning model
+- Task 8: Assess trained model performance
+
+### Connect with me:
+
+
+[<img align="left" alt="codeSTACKr | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
+[<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
+[<img align="left" alt="codeSTACKr.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][StackExchange AI]
+
+[twitter]: https://twitter.com/F4izy
+[linkedin]: https://www.linkedin.com/in/faizy-mohd-836573122/
+[StackExchange AI]: https://ai.stackexchange.com/users/36737/cypher
+
+
+---
+
+
+![Faizy's github stats](https://github-readme-stats.vercel.app/api?username=mohd-faizy&show_icons=true)
+
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mohd-faizy&layout=compact)](https://github.com/mohd-faizy/github-readme-stats)
+
