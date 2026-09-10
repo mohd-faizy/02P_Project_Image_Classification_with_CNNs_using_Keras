@@ -47,9 +47,11 @@ This repository demonstrates how to design, train, evaluate, and interpret a dee
 
 The **CIFAR-10** (Canadian Institute For Advanced Research) dataset is a benchmark collection of $60,000$ $32 \times 32$ color images across $10$ distinct classes ($6,000$ images per class).
 
+
 <div align="center">
-  <img src="assets/cifar10_examples.jpg" alt="CIFAR-10 Dataset Examples" width="85%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+  <img src="https://cdn.jsdelivr.net/gh/mohd-faizy/02P_Project_Image_Classification_with_CNNs_using_Keras@master/assets/cifar10_examples.jpg" alt="CIFAR-10 Dataset Examples" width="85%" style="border-radius: 8px;">
 </div>
+
 
 In this project, we extract and focus on a targeted **3-class classification problem**:
 - **Class 0:** Aeroplane ✈️
