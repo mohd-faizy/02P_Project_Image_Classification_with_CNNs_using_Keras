@@ -1,99 +1,165 @@
-# __Project - Image Classification with CNNs using Keras__
-Training  a CNN in Keras with a TensorFlow backend to solve Image Classification problems
+# Image Classification with CNNs using Keras
 
-<img src='https://miro.medium.com/max/700/1*1wDoZyhXhGvkfqpO0k0y6g.png'>
+<div align="center">
+  <img src="https://miro.medium.com/v2/resize:fit:700/1*1wDoZyhXhGvkfqpO0k0y6g.png" alt="CNN Image Classification Banner" width="85%" style="border-radius: 8px;">
+</div>
 
-## __Dataset__
+<br>
 
-> [__CIFAR-10__ - python version](https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
+<div align="center">
 
-__md5sum:__ c58f30108f718f92721af3b95e74349a
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohd-faizy/02P_Project_Image_Classification_with_CNNs_using_Keras/blob/master/Image_Classification_with_CNN_using_Keras.ipynb)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![TensorFlow 2.x](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://www.tensorflow.org/)
+[![Keras](https://img.shields.io/badge/Keras-3.x-red.svg)](https://keras.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-__Version	Size:__ 163 MB	
+</div>
 
-
-```python
-# Loading the from keras dataset 
-(x_train, y_train), (x_test, y_test) = tf.keras.datasets.cifar10.load_data()
-
-```
-
-> The __CIFAR-10__ dataset (__Canadian Institute For Advanced Research__) is a collection of images that are commonly used to train __machine learning__ and __computer vision algorithms__. It is one of the most widely used datasets for machine learning research.The __CIFAR-10__ dataset contains __60,000 32x32 color images__ in __10 different classes__. The 10 different classes represent __airplanes, cars, birds, cats, deer, dogs, frogs, horses, ships,__ and __trucks__. There are __6,000 images__ of each class.
-
-> Computer algorithms for recognizing objects in photos often learn by example. CIFAR-10 is a set of images that can be used to teach a computer how to recognize objects. Since the images in CIFAR-10 are __low-resolution (32x32)__, this dataset can allow researchers to quickly try different algorithms to see what works. Various kinds of convolutional neural networks tend to be the best at recognizing the images in __CIFAR-10__.
-
-> CIFAR-10 is a labeled subset of the 80 million tiny images dataset. When the dataset was created, students were paid to label all of the images.
-<center><img src='https://blog.kickview.com/content/images/size/w2000/2016/12/cfar-1.jpg'></center>
-
-## __Project Overview__
-Image Classification with CNNs using Keras
-
-## __Objectives__
-The Project Focus on two learning objectives:
-
-1. _Understand how to create convolutional neural networks in Keras._
-2. _Be able to train convolutional neural networks to solve image classification problems._
-
-## __Project Structure__
-The hands on project on Image Classification with CNNs using Keras is divided into following tasks:
-
-### __Task 1: Introduction__
-- Introduction to the problem.
-- Introduction to the Rhyme interface.
-- Importing the required libraries and helper functions.
-
-### __Task 2: Pre-process Data__
-- Importing the CIFAR-10 dataset.
-- Creating a subset of the dataset which has just 3 classes instead of 10. This is done for both the training and test set.
-- Randomly shuffling the newly created subset.
-
-### __Task 3: Visualize Examples__
-- Plotting randomly selected examples of a given set.
-- We look at some examples from training and test set along with their labels.
-
-### __Task 4: Create Model__
-- Creating a Keras Sequential model.
-- Creating a function to add a convolutional block to the model.
-- A look at the model summary.
-
-### __Task 5: Train the Model__
-- Fit the model on the subset.
-- Setting the EarlyStopping callback.
-- Setting the ModelCheckpoint callback.
-
-### __Task 6: Final Predictions__
-- Plotting the training and validation accuracy from the training.
-- Loading the best model.
-- Getting predictions on the test set and displaying the results.
-
-### Classify Traffic Sign Using Deep Learning for Self-Driving Cars is divided into following tasks
-
-- Task 1: overview
-- Task 2: Import Libraries and data-sets
-- Task 3: Perform image visualization
-- Task 4: Convert images to gray-scale and perform normalization
-- Task 5: Understand the theory and intuition behind Convolutional Neural Networks
-- Task 6: Build deep learning model
-- Task 7: Compile and train deep learning model
-- Task 8: Assess trained model performance
-
-### Connect with me:
-
-
-[<img align="left" alt="codeSTACKr | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
-[<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="codeSTACKr.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][StackExchange AI]
-
-[twitter]: https://twitter.com/F4izy
-[linkedin]: https://www.linkedin.com/in/faizy-mohd-836573122/
-[StackExchange AI]: https://ai.stackexchange.com/users/36737/cypher
-
+Deep learning project implementing a modular **Convolutional Neural Network (CNN)** in **Keras** with a **TensorFlow** backend to perform multi-class image classification on the **CIFAR-10** dataset (specifically distinguishing between **Aeroplanes**, **Cars**, and **Birds**).
 
 ---
 
+## 📌 Project Overview
 
-![Faizy's github stats](https://github-readme-stats.vercel.app/api?username=mohd-faizy&show_icons=true)
+This repository demonstrates how to design, train, evaluate, and interpret a deep Convolutional Neural Network from scratch. The notebook is structured with modern best practices, including:
+- Modular **hierarchical convolutional blocks** with `Conv2D`, `BatchNormalization`, and `MaxPooling2D`.
+- Regularization via spatial **Dropout** to mitigate overfitting.
+- Efficient training callbacks: **EarlyStopping** and **ModelCheckpoint**.
+- Extensive diagnostic analytics: class distributions, RGB channel histograms, dual learning dynamics curves, normalized confusion matrices, and **intermediate feature map activations**.
 
+---
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mohd-faizy&layout=compact)](https://github.com/mohd-faizy/github-readme-stats)
+## 📂 Repository Structure
 
+```
+02P_Project_Image_Classification_with_CNNs_using_Keras/
+├── assets/
+│   └── cifar10_examples.jpg                         # CIFAR-10 10x10 dataset visualization
+├── Image_Classification_with_CNN_using_Keras.ipynb  # Primary Jupyter notebook with modern CNN pipeline
+├── model_0.912.h5                                   # Pre-trained Keras model weights (~91.2% accuracy)
+└── README.md                                        # Project documentation & overview
+```
+
+---
+
+## 📊 Dataset: CIFAR-10 Subset
+
+The **CIFAR-10** (Canadian Institute For Advanced Research) dataset is a benchmark collection of $60,000$ $32 \times 32$ color images across $10$ distinct classes ($6,000$ images per class).
+
+<div align="center">
+  <img src="assets/cifar10_examples.jpg" alt="CIFAR-10 Dataset Examples" width="85%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+</div>
+
+In this project, we extract and focus on a targeted **3-class classification problem**:
+- **Class 0:** Aeroplane ✈️
+- **Class 1:** Automobile (Car) 🚗
+- **Class 2:** Bird 🐦
+
+### Dataset Specifications
+| Parameter | Value |
+| :--- | :--- |
+| **Total Classes in Benchmark** | 10 classes |
+| **Classes Evaluated** | 3 (`aeroplane`, `car`, `bird`) |
+| **Image Resolution** | $32 \times 32 \times 3$ (RGB) |
+| **Normalization** | Scaled to $[0.0, 1.0]$ via $X / 255.0$ |
+| **Target Encoding** | One-Hot Encoding (3 classes) |
+
+---
+
+## 🏗️ Model Architecture
+
+The CNN architecture utilizes 3 stacked convolutional blocks followed by a dense classification head:
+
+```
+Input (32x32x3)
+  │
+  ├── Block 1: Conv2D (32, 3x3, same) ──► BatchNorm ──► Conv2D (32, 3x3) ──► MaxPool (2x2) ──► Dropout (0.5)
+  │
+  ├── Block 2: Conv2D (64, 3x3, same) ──► BatchNorm ──► Conv2D (64, 3x3) ──► MaxPool (2x2) ──► Dropout (0.5)
+  │
+  ├── Block 3: Conv2D (128, 3x3, same) ─► BatchNorm ──► Conv2D (128, 3x3) ─► MaxPool (2x2) ──► Dropout (0.5)
+  │
+  └── Classification Head: Flatten ──► Dense (3, Softmax)
+```
+
+- **Loss Function:** `categorical_crossentropy`
+- **Optimizer:** `Adam(learning_rate=0.001)`
+- **Evaluation Metric:** `accuracy`
+
+---
+
+## 🚀 Project Tasks & Workflow
+
+The notebook is divided into 6 structured tasks:
+
+### 1. Import Libraries & Hardware Setup
+- Importing modern TensorFlow, Keras, NumPy, Matplotlib, Seaborn, and Scikit-learn.
+- Hardware device verification (`tf.config.list_physical_devices('GPU')`).
+
+### 2. Preprocess Data & Exploratory Analysis
+- Vectorized filtering for the 3 target classes (`get_three_classes`).
+- Random shuffling and standardizing pixel intensities to $[0.0, 1.0]$.
+- **Class Distribution Plot:** Visual comparison of train vs. test splits.
+- **RGB Intensity Histograms:** Exploratory channel distribution inspection across sample images.
+
+### 3. Visualize Dataset Examples
+- Visual grid displaying random training and test images with their ground-truth labels.
+
+### 4. Create CNN Architecture
+- Defining the modular `add_conv_block` function.
+- Sequential model construction with explicit input dimensions and compilation.
+
+### 5. Train the Model & Learning Diagnostics
+- Training with test set validation.
+- Callbacks: `EarlyStopping` (patience=4, restore best weights) and `ModelCheckpoint`.
+- **Dual Learning Curves:** Synchronized accuracy and loss dynamics plots tracking optimization progression.
+
+### 6. Evaluation, Performance Metrics & Interpretability
+- Loading best saved model checkpoint (`model_0.912.h5`).
+- **Confusion Matrix Heatmaps:** Dual visualization with raw counts and normalized recall percentages.
+- **Per-Class Metrics Bar Chart:** Precision, Recall, and F1-Score breakdown per class.
+- **Softmax Probability Distributions:** Sample test images paired with horizontal confidence bar charts.
+- **Feature Map Activations:** Visual inspection of filters from the first `Conv2D` layer.
+
+---
+
+## 📈 Visual Diagnostics & Results
+
+| Diagnostic Visualization | Purpose |
+| :--- | :--- |
+| **Class Distribution Bar Chart** | Verifies balanced class representation across training and test subsets |
+| **RGB Channel Histograms** | Analyzes pixel value distributions across color spaces |
+| **Dual Learning Curves** | Diagnoses model convergence, overfitting, and learning rates |
+| **Normalized Confusion Matrix** | Pinpoints specific inter-class confusion patterns |
+| **Softmax Confidence Bars** | Demonstrates model prediction certainty per test instance |
+| **Feature Map Activations** | Visualizes learned low-level edge and texture detectors |
+
+---
+
+## 💻 Getting Started
+
+### Prerequisites
+Make sure you have Python 3.9+ and install the required dependencies:
+```bash
+pip install tensorflow keras numpy matplotlib seaborn scikit-learn
+```
+
+### Running Locally
+Launch JupyterLab or VS Code and open the notebook:
+```bash
+jupyter notebook Image_Classification_with_CNN_using_Keras.ipynb
+```
+
+---
+
+## 🔗 Connect with me
+
+<div align="center">
+
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/F4izy)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohd-faizy/)
+[![Stack Exchange](https://img.shields.io/badge/Stack_Exchange-1E5397?style=for-the-badge&logo=stack-exchange&logoColor=white)](https://ai.stackexchange.com/users/36737/faizy)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mohd-faizy)
+
+</div>
