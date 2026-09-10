@@ -1,7 +1,7 @@
 # Image Classification with CNNs using Keras
 
 <div align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:700/1*1wDoZyhXhGvkfqpO0k0y6g.png" alt="CNN Image Classification Banner" width="85%" style="border-radius: 8px;">
+  <img src="assets/banner.jpg" alt="CNN Image Classification Banner" width="85%" style="border-radius: 8px;">
 </div>
 
 <br>
